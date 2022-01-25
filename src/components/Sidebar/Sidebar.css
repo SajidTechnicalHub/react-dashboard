@@ -1,0 +1,80 @@
+/* The sidebar menu */
+.sidenav {
+    
+     
+    z-index: 1; 
+    top: 0; 
+    left: 0;
+    background-color: #fff; 
+    overflow-x: hidden; 
+    padding-top: 20px;
+    position: absolute;
+    width: 281px;
+    height: 1278px;
+    background: #FFFFFF;
+    box-shadow: 4px 0px 10px rgba(0, 0, 0, 0.1);
+    
+  }
+  
+ 
+  .sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 15px;
+    color: #818181;
+    display: block;
+  }
+  .sidenav a:first-child{
+    color: green;
+  }
+  
+  
+  .sidenav a i{
+    margin-right: 10px;
+    color: grey;
+  }
+  
+
+  .sidenav a:hover {
+    color: green;
+  }
+  
+  /* Style page content */
+  .main {
+    margin-left: 200px; /* Same as the width of the sidebar */
+    padding: 0px 10px;
+    background-color: #F9F9F9;
+    min-height: 100vh;
+  }
+
+  .sidebar-content{
+    position: absolute;
+    width: 200px;
+    height: 506px;
+    left: 30px;
+    top: 100px;
+
+    font-family: Noto Sans;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    text-transform: capitalize;
+    font-feature-settings: 'pnum' on, 'onum' on;
+  }
+  .sidenav .sidebar-content a i:last-child{
+    margin-left: 20px;
+  }
+  .sidebar-logo{
+    position: absolute;
+    width: 145px;
+    height: 67px;
+    left: 43px;
+    top: 16px;
+  }
+  
+  /* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }

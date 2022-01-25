@@ -1,38 +1,131 @@
-.App {
-  text-align: center;
+.sidebar{
+border: 2px solid green;
+border-radius: 10px;
+Offset: 4px, 0px;
+
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.icon-bar {
+  width: 90px; /* Set a specific width */
+  background-color: #555; /* Dark-grey background */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.icon-bar a {
+  display: block; /* Make the links appear below each other instead of side-by-side */
+  text-align: center; /* Center-align text */
+  padding: 16px; /* Add some padding */
+  transition: all 0.3s ease; /* Add transition for hover effects */
+  color: white; /* White text color */
+  font-size: 36px; /* Increased font-size */
 }
 
-.App-header {
-  background-color: #282c34;
+.icon-bar a:hover {
+  background-color: #000; /* Add a hover color */
+}
+
+.active {
+  background-color: #04AA6D; /* Add an active/current color */
+}
+
+
+.main {
+ 
+  margin-left: 100px; 
+  padding: 0px 20px;
+  background-color: #F9F9F9;
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.left-div{
+  width: 59%;
+  min-height: 100vh;
+  border: 2px solid red;
+  
 }
+.right-div{
+  width: 39%;
+  
+  min-height: 100vh;
+  border: 2px solid green;
+  
+}
+.location{
+ 
+width: 602px;
+height: 284px;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+
+background: #FFFFFF;
+box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+border-radius: 5px;
+
+
+
+}
+.earnings{
+  width: 602px;
+height: 284px;
+
+
+background: #FFFFFF;
+box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+border-radius: 5px;
+}
+.progress{
+  width: 602px;
+height: 284px;
+
+
+background: #FFFFFF;
+box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+border-radius: 5px;
+}
+.flex-container{
+  display:-webkit-flex;
+  display:flex;
+  -webkit-flex-direction:column;
+  flex-direction:column;
+  -webkit-align-items:center;
+  align-items:center;
+  padding: 20px;
   }
-  to {
-    transform: rotate(360deg);
+  .t-booking{
+    width: 288px;
+    height: 108px;
+
+
+    background: #FBDCFF;
+    border-radius: 5px;
   }
+  .t-earning{
+    width: 288px;
+    height: 108px;
+
+
+    background: #FFEFE3;
+    border-radius: 5px;
+  }
+  .location-img{
+    
+    height: 238px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+.calender{
+  width: 400px;
+  height: 184px;
+
+
+  background: #FFFFFF;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+.upcomming{
+  width: 400px;
+  height: 75px;
+  background: #EFEFEF;
+  border-radius: 5px;
 }
